@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            border: 10px solid black;
+            width: 200px; height: 200px;
+            overflow: hidden;
+        }
+
+        #box > div {
+            border: 10px solid lawngreen;
+            transition: 1s transform;
+        }
+
+        #box:hover > div {
+            transform: translate(0px, -800px);
+        }
+
+        #item {
+            border: 10px solid black;
+            width: 250px;
+            height: 188px;
+            overflow:hidden;
+        }
+
+        #item > img {
+            transition: 1s all;
+            transform: translate(250px, 0px);
+        }
+        #item:hover > img {
+            transform: translate(0px, 0px);
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- ex54_transition.html -->
+     <div id="box">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum aperiam perspiciatis ut quisquam fuga, non nihil itaque libero numquam voluptates voluptate amet sapiente saepe illum totam, natus quibusdam qui magnam esse iusto a commodi velit ea. Facilis accusantium eos tenetur inventore exercitationem repudiandae fuga odio debitis quia voluptas consequuntur, alias vero dolore magnam maiores, blanditiis labore totam delectus nostrum a repellat eligendi corrupti veritatis ea. Iusto porro blanditiis, alias aspernatur reiciendis tempora voluptatum. Amet est quo autem iste harum ipsa culpa. Ipsa distinctio quasi, soluta libero rem reiciendis eius earum eaque animi, numquam vitae atque incidunt, voluptates molestias? Atque?</div>
+     </div>
+
+     <hr>
+
+     <div id="item">
+        <img src="images/dog01.jpg">
+     </div>
+    
+</body>
+</html>

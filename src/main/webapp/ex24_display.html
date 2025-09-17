@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+            display 속성
+            - 요소를 화면에 어떻게 출력하는지 제어
+            1. none
+            2. block
+            3. inline
+            4. inline-block
+        */
+
+        .box {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            display: inline;
+        }
+
+
+        .link {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            display: block;
+            /* link는 인라인 태그인데 display로 인해서 블럭태그 성질로 변환시킬수 있음*/
+
+        }
+
+        #menu {
+            border: 5px solid blue;
+            padding-left: 0;
+            list-style-type: lower-roman;
+            text-align: center;
+        }
+
+        #menu > li {
+            border: 5px solid red;
+            /* margin: 0; */
+            display: inline-block;
+            width: 100px;
+            
+        }
+
+        #list1 {
+            font-size: 5px;
+        }
+
+        #list1 > div {
+            font-size: 1rem;
+        }
+
+        #list2 > input {
+            display: block;
+            margin-bottom: 5px
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- ex24_display.html -->
+
+    <ul id="menu">
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+    </ul>
+
+    <div id="list1"> 
+        <div>입력하세요.</div>
+        <input type="text"><br><br>
+        <input type="text"><br><br>
+        <input type="text"><br><br>
+        <input type="text"><br><br>
+        <input type="text">
+    </div>
+
+    <hr>
+
+    <div id="list2"> 
+        <div>입력하세요.</div>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </div>
+
+    <h1>블럭 태그</h1>
+    <div id="box1" class="box">상자1</div>
+    <div id="box1" class="box">상자2</div>
+    <div id="box1" class="box">상자3</div>
+
+    <h1>인라인 태그</h1>
+    <!-- 빈 링크-->
+     <a href="#!" id="link1" class="link">링크1</a>
+     <a href="#!" id="link1" class="link">링크2</a>
+     <a href="#!" id="link1" class="link">링크3</a>
+
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+</body>
+</html>

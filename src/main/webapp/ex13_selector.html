@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*  
+            선택자가 중복 가능한가? 
+            - 가능하다.
+            - 비추천
+            1. 속성 충돌 X > 아무 문제 없음 > 각각 모두 적용
+            2. 속성 충돌 O > 마지막에 적용한 속성이 반영
+
+        */
+        /* div { color: blue; }
+        div { background-color: yellow; } */
+
+        /*div { color: blue; }
+        div { color: orange; }*/
+
+        /*
+            여러 선택자 > 1개 태그에 적용 > 속성 출동 발생!!
+            - 선택자 우선순위
+            - 점수 계산 > 점수가 가장 높은 선택자를 적용
+                        > 점수가 동일하면 > 맨 마지막 선택자를 적용
+            - 구체적으로 묘사 > 우선한다.
+
+            1. 태그 선택자: 1점
+            2. 클래스 선택자: 10점
+            3. 아이디 선택자: 100점
+        */
+
+        /* h1+div#box1 { color: brown; } */
+        /* div#box1 { color: aqua; }  */
+        /* div#box1 { color: purple; } */
+        #box1 {color: orange; }
+        /* .box { color: red; } */
+        /* div.box { color: green; }  */
+        /* h1+div { color: pink; } */
+        /* div { color: blue; } */
+
+        .box.aaa.bbb.ccc.eee.fff.ggg.hhh.iii.jjj { color: blue; }
+
+
+    </style>
+</head>
+<body>
+    <!-- ex13_selector.html -->
+    <h1 class="box">선택자 특성</h1>
+
+    <div id="box1" class="box aaa bbb ccc eee fff ggg hhh iii jjj">상자1</div>
+    <div>상자2</div>
+    <div>상자3</div>
+
+</body>
+</html> 

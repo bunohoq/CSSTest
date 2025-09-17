@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+            폼컨트롤 
+            - 브라우저가 기본적으로 서식 적용(User-Agent)
+            - 개발자가 일부 속성 정의 > 나머지 모든 속성이 기본값으로 변함
+        */
+        #txt-search {
+            /* background-color: yellow; */
+
+            background-image: url(images/hangame.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #txt-search:focus {
+            /* background-color: yellow; */
+            background-image: url();
+        }
+
+        .data:focus {
+            background-image: url(images/bullet18.png);
+            background-repeat: no-repeat;
+            background-position: 97% center;
+        }
+
+        #btn-search {
+            background-image: url(images/bullet10.png);
+            background-repeat: no-repeat;
+            background-position: 5% center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ex11_background.html -->
+    <h1>네이버</h1>
+
+    <form>
+        <input type="text" size="30" id="txt-search">
+    </form>
+
+    <h2>입력</h2>
+
+    <input type="text" class="data"><br>
+    <input type="text" class="data"><br>
+    <input type="text" class="data"><br>
+    <input type="text" class="data"><br>
+    <input type="text" class="data"><br>
+    <input type="text" class="data"><br>
+    <input type="text" class="data"><br>
+    <input type="text" class="data"><br>
+    <input type="text" class="data"><br>
+    <input type="text" class="data"><br>
+
+    <hr>
+
+    <input type="submit" id="btn-search" value="   검색하기">
+
+    <hr>
+
+    <input type="submit" value="       검색하기      ">
+
+    <hr>
+
+    <button>
+        <img src="images/bullet10.png">
+        검색하기
+    </button>
+
+</body>
+</html>

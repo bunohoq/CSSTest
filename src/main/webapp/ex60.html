@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+            CSS, Cascading style sheet
+
+            Cascading 성질
+            - (상황(X), 속성(O)에 따라...) 부모 태그에 적용한 CSS는 자식 태그에도 자동으로 적용된다.
+            - 텍스트 관련 속성만 자식에게 되물림된다.
+            
+            
+        */
+
+        #parent {
+            color: chocolate;
+            font-family: '궁서체';
+            font-size: 2rem;
+            border: 1px solid black;
+            width: 300px;
+            padding: 20px;
+        }
+
+        #child {
+            /* color: chocolate; */
+            /* font-family: '궁서체'; */
+            /* font-size: 2rem; */
+            /* border: 1px solid black; */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- ex60.html -->
+     <div id="parent">
+        부모의 내용물입니다.
+        <div id="chil d">
+            자식의 내용물입니다
+        </div>
+        부모의 내용물입니다.
+     </div>
+    
+</body>
+</html>

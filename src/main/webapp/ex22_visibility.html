@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+
+            가시성, Visibility
+
+            visibility 속성
+            - visible, hidden
+            - 요소가 사라져도, 요소의 원래 영역은 남는다.
+              (랜더링은 진행된다. CSSTree에 포함)
+
+            display 속성
+            - none, block, inline
+            - 요소가 사라지면 요소의 원래 영역도 같이 사라진다.
+              (랜더링은 진행 안된다. CSSTree에 미포함)
+
+        */
+        #cat02 {
+            /* visibility: hidden; */
+            /* display: none;  */
+        }
+
+        #box {
+             border: 10px solid blue;
+        }
+
+        /* #box:hover img {
+            visibility: hidden;
+        } */
+
+
+        img:hover ~ img {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- ex22_visibility.html -->
+
+    <!--
+        웹에서 사용 가능한 이미지 포맷
+        1. *.jpeg(*.jpg)
+            - 압축률 좋음.
+            - 사진
+
+        2. *.gif
+            - 256색까지만 표현 가능
+            - 아이콘 표현
+            - 투명 배경
+            - animated GIF
+
+        3. *.png
+            - 비손실 압축
+            - 투명 배경
+            - jpeg + gif 
+
+        4. *.webp
+            - 구글에서 개발
+
+        5. *.svg
+            - 벡터 그래픽 포맷
+    
+    -->
+
+     <div id="box">
+        <img src="images/catty01.png" alt="" id="cat01">
+        <img src="images/catty02.png" alt="" id="cat02">
+        <img src="images/catty03.png" alt="" id="cat03">
+    </div>
+    
+</body>
+</html>

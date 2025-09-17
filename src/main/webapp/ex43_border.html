@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        
+        body { margin-bottom: 500px}
+
+        #box {
+            border: 1px solid black;
+            width: 200px; height: 400px;
+
+            /*
+            
+                모서리 둥글게(px, %)
+                - 최대값 = 단축의 1/2까지
+            
+            */
+            /* border-radius: 100px; */
+            /* border-radius: 50px; */
+            /* border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px; */
+        }
+
+        #txt1 {
+            background-color: #FFFFFF;
+            border: 1px solid #767676;
+            padding: 2px 3px;
+            border-radius: 2.5px;
+
+        }
+
+        #dog > img {
+            /* border-radius: 94px; */
+            /* border-radius: 50%; */
+        }
+
+        #dog > img:hover {
+            border-radius: 50%;
+        }
+
+        .input {
+
+        }
+
+        .input > span {
+            float: left;
+            border: 1px solid #555;
+            padding: 3px 5px;
+            /* background-color: #EDEDED; */
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+        }
+
+        .input > input[type=text] {
+            float: left;
+            border: 1px solid #555;
+            outline: none;
+            padding: 7px;
+            border-left: 0px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .input.red > span {
+            background-color: tomato
+        }
+
+        .input.pink > span {
+            background-color: palevioletred
+        }
+        .input.blue > span {
+            background-color: dodgerblue
+        }
+        .input.black > span {
+            background-color: black;
+            color: white
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- ex43_border.html -->
+    <div id="box">홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다홍길동입니다</div>
+
+    <hr>
+
+    <input type="text"><br><br>
+    <input type="text" id="txt1">
+
+    <hr>
+
+    <div id="dog">
+        <img src="images/dog01.jpg">
+        <img src="images/dog02.jpg">
+        <img src="images/dog03.jpg">
+        <img src="images/dog04.jpg">
+        <img src="images/dog05.jpg">
+    </div>
+
+    <hr>
+
+    <div class="input pink">
+        <span class="material-symbols-outlined">swipe_left</span>
+        <input type="text">
+    </div>
+
+    <br><br>
+
+    <div class="input black">
+        <span class="material-symbols-outlined">close</span>
+        <input type="text">
+    </div>
+
+    <br><br>
+
+    <div class="input red">
+        <span class="material-symbols-outlined">favorite</span>
+        <input type="text">
+    </div>
+
+    <br><br>
+
+    <input type="text" style="border: 1px solid #767676; padding: 3px 12px; border-radius: 100px;">
+
+    
+</body>
+</html>

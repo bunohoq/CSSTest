@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 1px solid black;
+            width: 200px; height: 200px;
+            }
+
+        #box:hover {
+            border-width: 10px;
+            outline: 10px solid red;
+        }
+
+        #input {
+            margin-top: 20px;
+        }
+        #input > input {
+            display: block;
+            /* outline: none; */
+        }
+        #input > input:focus {
+            /* border: 5px solid red; */
+            /* outline: 5px solid red; */
+        }
+    </style>
+</head>
+<body>
+    <!-- ex44_outline.html -->
+
+    <div id="list1">
+        <!-- box#box$.box{상자}*3 -->
+        <div id="box1" class="box">상자</div>
+        <div id="box2" class="box">상자</div>
+        <div id="box3" class="box">상자</div>
+    </div>
+
+    <div id="input">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </div>
+    
+</body>
+</html>

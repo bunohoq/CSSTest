@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hbar {
+            background-color: cornflowerblue;
+            width: 200px;; height: 10px;   
+        }
+
+        #vbar {
+            background-color: cornflowerblue;
+            width: 10px;
+            height: 100px;
+            position: absolute;
+            left: -2px;
+            top: 18px;
+        }
+
+        #box{
+            background-color: gold;
+            /* width: 140px;
+            height: 40px; */
+            width: 200px;
+            height: 100px;
+
+            /*
+                border, width, height, padding, bottom
+
+                객체의 크기(영역) X, 콘텐츠 영역의 크기(O)
+                - width, height
+                
+                실제 눈에 보이는 객체의 크기
+                - width + padding + border
+                - height + padding + border
+            
+                box-sizing
+                - 객체 영역의 크기를 지정하는 정책
+                1. content-box (default)
+                    - width/height == content 영역의 크기
+
+                2. border-box
+                    - width/height == border 영역 + padding + border
+                    - 진짜로 눈에 보이는 상자의 크기를 width/height로 지정
+            */
+
+            padding: 20px;
+            border: 10px solid black;
+            /* margin: 30px; */
+
+            box-sizing: border-box;
+        }
+
+        /*
+            CSS1, CSS2 위주
+            CSS3 위주
+        
+        */
+
+    </style>
+</head>
+<body>
+    <!-- ex35_box.html -->
+    <div id="hbar"></div>
+    <div id="vbar"></div>
+    <div id="box">상자</div>
+</body>
+</html>

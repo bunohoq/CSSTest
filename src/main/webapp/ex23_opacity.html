@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /*
+            rgba() 함수 > 색상에 대한 투명도
+
+            opacity, 불투명도
+            - 모든 객체에 대한 투명도
+            - 0(투명) ~ 1(불투명)
+        
+        
+        */
+
+        /* #cat02 {
+            opacity: 0;
+        } */
+
+        #box > img {
+            opacity:.3;
+        }
+
+        #box > img:hover {
+            opacity: 1;
+            cursor: wait;
+        }
+
+
+        .txt {
+            opacity: .3;
+            outline: none;
+        }
+
+        .txt:focus {
+            opacity: 1;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- ex23_opacity.html -->
+     <div id="box">
+        <img src="images/catty01.png" alt="" id="cat01">
+        <img src="images/catty02.png" alt="" id="cat02">
+        <img src="images/catty03.png" alt="" id="cat03">
+    </div>
+    
+
+    <hr>
+
+
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+</body>
+</html>

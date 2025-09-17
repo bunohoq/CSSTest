@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+        
+            background
+            1. background-color
+            2. background-image
+            3. background-repeat
+            4. background-position
+            5. background-attachment
+            --------------------------
+            6. background-size
+        
+        */
+
+        #box1 {
+            border: 1px solid black;
+            width: 400px; height: 400px;
+            background-image: url(images/wall27.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+
+            /* background-size: 400px 400px; */
+            /* background-size: 100px 100px ; */
+
+            /*
+                종횡비 유지 > 컨테이너 맞춰 배경 넣기
+                1. 장축 맞출지? > contain
+                2. 단축 맞출지? > cover
+            */
+
+            /* background-size: 400px auto; */
+            /* background-size: contain; */
+
+            /* background-size: auto 400px; */
+            background-size: cover;
+        }
+
+        #box2 {
+            border: 1px solid black;
+            width: 400px; height: 400px;
+
+            background-image: url(images/catty05.png), url(images/catty03.png), url(images/catty02.png), url(images/catty07.png);
+            background-position: left top, right top, right bottom, left bottom;
+            background-repeat: no-repeat, repeat-x, repeat-y, no-repeat;
+            
+        }
+
+        #box3 {
+            border: 1px solid black;
+            width: 600px; height: 400px;
+
+            /* 그레디언트 효과, Gradient */
+            /* background: linear-gradient(red, blue) */
+            /* background: linear-gradient(to top right, red, blue) */
+
+            /* degree: 각도 단위 */
+            /* 선형 그레디언트 */
+            /* background: linear-gradient(10deg, red, blue) */
+            /* background: linear-gradient(red, orange, yellow, green, blue, indigo, purple) */
+
+            /* 원형 그레디언트 */
+            background: radial-gradient( circle, tomato, cornflowerblue)
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- ex41_baxkground.html -->
+     <div id="box3"></div>
+    
+</body>
+</html>

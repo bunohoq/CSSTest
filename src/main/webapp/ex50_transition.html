@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #menu > img, #footer-menu > img {
+            transition: .6s all;
+        }
+        
+        #menu {
+            font-size: 0;
+            /* border: 5px solid black; */
+            width: 630px;
+            margin: 0 auto;
+            transform: translate(0, -100px);
+        }
+
+        /* #menu:hover {
+            transform: translate(0, -10px);
+        } */
+
+        #menu > img:hover {
+            transform: translate(0px, 90px);
+
+        }
+
+        #footer-menu {
+            font-size: 0;
+            width: 630px;
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: translate(0, 90px);
+        }
+
+        #footer-menu > img:hover {
+            transform: translate(0px, -90px);
+
+        }
+    </style>
+</head>
+<body>
+    <!-- ex50_transition.html -->
+     <div id="menu">
+        <img src="images/rect_icon01.png">
+        <img src="images/rect_icon02.png">
+        <img src="images/rect_icon03.png">
+        <img src="images/rect_icon04.png">
+        <img src="images/rect_icon05.png">
+     </div>
+
+     <div id="footer-menu">
+        <img src="images/rect_icon01.png">
+        <img src="images/rect_icon02.png">
+        <img src="images/rect_icon03.png">
+        <img src="images/rect_icon04.png">
+        <img src="images/rect_icon05.png">
+     </div>
+    
+</body>
+</html>

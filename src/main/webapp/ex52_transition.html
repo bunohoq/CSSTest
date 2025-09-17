@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            border: 10px solid lawngreen;
+            padding: 200px;
+        }
+        #box {
+            border: 10px solid black;
+            width: 200px; height: 200px;
+            box-sizing: border-box;
+            background-color: hotpink;
+            transition: 1s all;
+
+            /* 변형 중심축 : 요소의 정중앙*/
+            /* transform-origin: 100px 100px; */
+            /* transform-origin: 50% 50%; */
+            /* transform-origin: center center; */
+            transform-origin: 400px 300px;
+        }
+
+        body:hover #box {
+            /* transform: rotate(45deg); */
+            /* transform: scale(2,2); */
+            transform: rotate(45deg) scale(1,4);
+
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- ex52_transition.html -->
+     <div id="box"></div>
+    
+</body>
+</html>

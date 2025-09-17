@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=expand_circle_down" />
+    <style>
+        /*
+
+            블럭태그와 인라인태그의 너비/높이 정책
+
+            블럭태그의 정책
+            1. 기본 정책
+                a. 너비: 100% (부모 영역을 꽉 채운다.)
+                b. 높이: 내용물의 높이가 영역의 높이가 된다.
+
+            2. 명시적 지정
+                a. 너비: 지정한 수치
+                b. 높이: 지정한 수치
+
+            인라인태그의 정책
+            1. 기본 정책
+                - 내용물이 영역에서 벗어나면(overflow) > 영역을 빠져나간다.
+                a. 너비: 내용물의 너비가 영역의 너비가 된다.
+                b. 높이: 내용물의 높이가 영역의 높이가 된다.
+
+            2. 명시적 지정
+                a. 너비 : 불가능
+                b. 높이 : 불가능
+                c. 예외 : 폼태그 인라인태그 & 이미지 태그
+        */
+
+        #box2 {
+            border: 5px solid black;
+            width: 150px;
+            /* height: 150px; */
+            height: auto;
+        }
+        
+
+        #name {
+            /* border: 1px solid black;
+            width: 500px;
+            height: 500px;
+            display: inline-block; */
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- ex16_box.html -->
+    <h1>박스 모델</h1>
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2</div>
+    <div id="box3" class="box">상자3</div>
+
+    <hr>
+
+    <div>안녕하세요. <span id="name">홍길동님</span>입니다.</div>
+
+</body>
+</html>

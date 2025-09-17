@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  
+        
+            CSS
+            1. 선택자
+            2. 박스 모델
+
+
+            박스 모델, Box Model
+            - HTML 모든 태그는 화면에 출력될때(Render) 사각형으로 출력된다.
+            - 이 특징을 기반으로 적용되는 CSS 규칙과 속성을 박스 모델이라고 한다.
+
+            1. 테두리, border
+            - 모든 태그는 자신의 영역을 가진다.
+                > 영역이 눈에 보이는 경우 / 안 보이는 경우
+            - border 적용 > 영역 가시화
+
+        */
+
+        #box2 {
+            border-color: black;    /* 테두리 색상 */
+            border-width: 5px;        /* 테두리 두께 */
+            border-style: solid;      /* 테두리 타입(solid, dashed, dotted) */
+        }
+
+        #box1 {
+
+            /* border-top-color: black;
+            border-top-width: 10px;
+            border-top-style: solid; */
+
+            border-top: 10px solid black;
+
+            border-right-color: red;
+            border-right-width: 20px;
+            border-right-style: dashed;
+
+            border-bottom-color: blue;
+            border-bottom-width: 30px;
+            border-bottom-style: dotted;
+
+            border-left-color: yellow;
+            border-left-width: 40px;
+            border-left-style: double;
+
+        }
+
+        #box3 {
+            border: 10px solid blue;
+
+            /* 방향성을 가지는 속성에만 적용 */
+            /* border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: orange; */
+
+            /* top(12시) > right > bottom > left */
+            /* border-color: red yellow green orange; */
+
+            /* top > right/left > bottom */
+            /* border-color: red yellow green; */
+
+            /* top/bottom > right/left */
+            /* border-color: red blue; */
+
+            /* top/right/bottom/left */
+            border-color: red;
+
+        }
+
+        h1 {
+            /* border: 1px solid blue; */
+            /* border: solid blue 1px; */
+        }
+
+        /* body {
+            border: 10px solid blue;
+        }
+
+        html {
+            border: 10px solid red;
+        }
+
+        head {
+            border: 10px solid green;
+        } */
+
+
+        .txt {
+            background-color: yellow;
+            border: 1px solid #999;
+        }
+
+        h1 {
+            /* text-decoration: underline; */
+            border-bottom: 1px dashed black;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <!-- ex14_box.html -->
+    <h1>박스 모델</h1>
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+
+    <hr>
+
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+
+
+</body>
+</html>

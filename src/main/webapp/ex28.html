@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body > div {margin-bottom: 50px; }
+
+        /*
+            요소간의 공백을 제거하라
+            1. 소스상의 공백문자를 직접 제거 > 비추천
+
+            2. font-size: 0
+
+            2. float
+        
+        */
+
+        #list2 {
+            font-size: 0rem;
+        }
+
+        #list3 > img {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- ex28.html -->
+    <div id="list1">
+        <img src="images/rect_icon01.png"><img src="images/rect_icon02.png"><img src="images/rect_icon03.png"><img src="images/rect_icon04.png"><img src="images/rect_icon05.png">
+    </div>    
+
+    <div id="list2">
+        <img src="images/rect_icon01.png">
+        <img src="images/rect_icon02.png">
+        <img src="images/rect_icon03.png">
+        <img src="images/rect_icon04.png">
+        <img src="images/rect_icon05.png">
+    </div>   
+
+    <div id="list3">
+        <img src="images/rect_icon01.png">
+        <img src="images/rect_icon02.png">
+        <img src="images/rect_icon03.png">
+        <img src="images/rect_icon04.png">
+        <img src="images/rect_icon05.png">
+        <div style="clear:both;"></div>
+    </div>   
+
+</body>
+</html>

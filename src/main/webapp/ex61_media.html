@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+        
+        meida query
+        - 반응형 웹(Responsive Web) > 해상도에 따라 각각 서식을 다르게 줄 수 있는 CSS기술
+        - 모바일/태블릿 지원때문에 사용
+
+        미디어 유형
+        1. all
+        2. screen > PC or 모바일
+        3. print > 인쇄
+        4. tv
+        5. projection
+
+         
+        미디어 궈리 조건
+        1. 모바일: 화면 <= 480px
+        2. 테블릿: 화면 <= 768px
+        3. 테블릿: 가로화면 <= 1024px
+        4. 랩탑: 화면 <= 1600px
+        5. 데스크탑: 화면 > 1600px
+
+        미디어 쿼리 사용 유무?
+        - PC 사용자 + 스마트폰 사용자
+
+        1. 사용 O
+            - 1페이지 + 디자인 2번
+
+        2. 사용 X
+            - 2페이지 + 디자인 각각 따로
+        
+        
+        */
+
+        body { background-color: gold; }
+        h1 { color: blue; }
+        /* if문: if (screen 조건 && (min-width: 800px)) */
+        @media screen and (max-width: 800px) {
+            body {background-color: dodgerblue;}
+            
+        }
+
+        /* @media print {
+            body { background-color: dodgerblue; }
+            h1 { color: red; }      
+        } */
+    </style>
+</head>
+<body>
+    <!-- ex61_media.html -->
+    <h1>제목입니다.</h1>
+</body>
+</html>
